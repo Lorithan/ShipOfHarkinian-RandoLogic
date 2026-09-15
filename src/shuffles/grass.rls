@@ -574,6 +574,36 @@ extend region RR_KF_STORMS_GROTTO {
     }
 }
 
+# overworld/lost_woods
+
+extend region RR_THE_LOST_WOODS {
+    locations {
+        RC_LW_GRASS_1: can_cut_shrubs()
+        RC_LW_GRASS_2: can_cut_shrubs()
+        RC_LW_GRASS_3: can_cut_shrubs()
+    }
+}
+
+extend region RR_LW_BEYOND_MIDO {
+    locations {
+        RC_LW_GRASS_4: can_cut_shrubs()
+        RC_LW_GRASS_5: can_cut_shrubs()
+        RC_LW_GRASS_6: can_cut_shrubs()
+        RC_LW_GRASS_7: can_cut_shrubs()
+        RC_LW_GRASS_8: can_cut_shrubs()
+        RC_LW_GRASS_9: can_cut_shrubs()
+    }
+}
+
+extend region RR_LW_NEAR_SHORTCUTS_GROTTO {
+    locations {
+        RC_LW_NEAR_SHORTCUTS_GROTTO_GRASS_1: can_cut_shrubs()
+        RC_LW_NEAR_SHORTCUTS_GROTTO_GRASS_2: can_cut_shrubs()
+        RC_LW_NEAR_SHORTCUTS_GROTTO_GRASS_3: can_cut_shrubs()
+        RC_LW_NEAR_SHORTCUTS_GROTTO_GRASS_4: can_cut_shrubs()
+    }
+}
+
 # overworld/market
 
 extend region RR_THE_MARKET {

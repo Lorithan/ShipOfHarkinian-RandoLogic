@@ -172,6 +172,20 @@ extend region RR_KF_STORMS_GROTTO {
     }
 }
 
+# overworld/lost_woods
+
+extend region RR_LW_UNDER_BRIDGE {
+    locations {
+        RC_LW_GOSSIP_STONE: always
+    }
+}
+
+extend region RR_LW_NEAR_SHORTCUTS_GROTTO {
+    locations {
+        RR_LW_NEAR_SHORTCUTS_GROTTO: always
+    }
+}
+
 # overworld/market
 
 extend region RR_MARKET_MASK_SHOP {

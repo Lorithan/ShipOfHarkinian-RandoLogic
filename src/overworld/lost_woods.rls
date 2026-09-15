@@ -1,0 +1,126 @@
+region RR_LW_FOREST_EXIT {
+    name: "LW Forest Exit"
+    scene:  SCENE_LOST_WOODS
+
+    exits {
+        RR_KF_OUTSIDE_LOST_WOODS: always
+    }
+}
+
+region RR_THE_LOST_WOODS {
+    name: "Lost Woods"
+    scene: SCENE_LOST_WOODS
+
+    events {
+        LOGIC_FAIRY_ACCESS: is_child() and can_use(RG_MAGIC_BEAN) and has(RG_LOST_WOODS_BRIDGE_BEAN_SOUL) and can_use(RG_SONG_OF_STORMS)
+        LOGIC_BUG_ACCESS: is_child() and can_cut_shrubs()
+        LOGIC_BORROW_SPOOKY_MASK: is_child() and flag(LOGIC_BORROW_SKULL_MASK) and can_use(RG_SARIAS_SONG) and has(RG_CHILD_WALLET) and has(RG_SPEAK_KOKIRI) and has(RG_SPEAK_HYLIAN)
+    }
+
+    locations {
+        RC_LW_SKULL_KID: is_child() and can_use(RG_SARIAS_SONG)
+        RC_LW_OCARINA_MEMORY_GAME: is_child() and has(RG_FAIRY_OCARINA) and ocarina_buttons() >= 5
+        RC_LW_TARGET_IN_WOODS: is_child() and can_use(RG_FAIRY_SLINGSHOT)
+    }
+
+    exits {
+        RR_LW_FOREST_EXIT: always
+        RR_LW_UNDER_BRIDGE: always
+        RR_GC_WOODS_WARP: always
+        RR_LW_BRIDGE: (is_adult() and (can_plant_bean(RR_THE_LOST_WOODS, RG_LOST_WOODS_BRIDGE_BEAN_SOUL) or trick(RT_LW_BRIDGE))) or can_use(RG_HOVER_BOOTS) or can_use(RG_LONGSHOT)
+        RR_ZR_FROM_SHORTCUT: has(RG_SILVER_SCALE) or can_use(RG_IRON_BOOTS) or (trick(RT_LOST_WOOD_NAVI_DIVE) and is_child() and has(RG_BRONZE_SCALE) and can_jumpslash())
+        RR_LW_BEYOND_MIDO: is_child() or can_use(RG_SARIAS_SONG) or trick(RT_LW_MIDO_BACKFLIP)
+        RR_LW_NEAR_SHORTCUTS_GROTTO: any_age(blast_or_smash())
+    }
+}
+
+region RR_LW_UNDER_BRIDGE {
+    name: "Lost Woods Under the Bridge"
+    scene: SCENE_LOST_WOODS
+
+    events {
+        LOGIC_FAIRY_ACCESS: call_gossip_fairy_except_suns()
+    }
+
+    exits {
+        RR_LW_BRIDGE: can_use(RG_LONGSHOT)
+        RR_THE_LOST_WOODS: can_climb_ladder()
+    }
+}
+
+region RR_LW_BEYOND_MIDO {
+    name: "LW Beyond Mido"
+    scene: SCENE_LOST_WOODS
+
+    events {
+        LOOGIC_FAIRY_ACCESS: can_use(RG_STICKS) or (is_child() and can_use(RG_MAGIC_BEAN) and has(RG_LOST_WOODS_BEAN_SOUL) and can_use(RG_SONG_OF_STORMS))
+    }
+
+    exits {
+        RR_LW_FOREST_EXIT: always
+        RR_THE_LOST_WOODS: is_child() or can_use(RG_SARIAS_SONG)
+        RR_SFM_ENTRYWAY: always
+        RR_DEKU_THEATER: always
+        RR_LW_SCRUBS_GROTTO: any_age(blast_or_smash())
+    }
+}
+
+region RR_LW_NEAR_SHORTCUTS_GROTTO {
+    name: "LW Near Shortcuts Grotto"
+    scene: SCENE_GROTTOS
+
+    locations {
+        RC_LW_NEAR_SHORTCUTS_GROTTO_CHEST: has(RG_OPEN_CHEST)
+    }
+
+    exits {
+        RR_LW_BEYOND_MIDO: always
+    }
+}
+
+region RR_DEKU_THEATER {
+    name: "Deku Theater"
+    scene: SCENE_GROTTOS
+
+    locations {
+        RC_DEKU_THEATER_SKULL_MASK: can_use(RG_SKULL_MASK)
+        RC_DEKU_THEATER_MASK_OF_TRUTH: can_use(RG_MASK_OF_TRUTH) and has(RG_SPEAK_DEKU)
+    }
+
+    exits {
+        RR_LW_BEYOND_MIDO: always
+    }
+}
+
+region RR_LW_SCRUBS_GROTTO {
+    name: "LW Scrubs Grotto"
+    scene: SCENE_GROTTOS
+
+    exits {
+        RR_LW_BEYOND_MIDO: always
+    }
+}
+
+region RR_LW_BRIDGE_FROM_FOREST {
+    name: "LW Bridge From Forest"
+    scene: SCENE_LOST_WOODS
+
+    locations {
+        RC_LW_GIFT_FROM_SARIA: always
+    }
+
+    exits {
+        RR_LW_BRIDGE: always
+    }
+}
+
+region RR_LW_BRIDGE {
+    name: "LW Bridge"
+    scene: SCENE_LOST_WOODS
+
+    exits {
+        RR_KOKIRI_FOREST: always
+        RR_HYRULE_FIELD: always
+        RR_THE_LOST_WOODS: can_use(RG_LONGSHOT)
+    }
+}

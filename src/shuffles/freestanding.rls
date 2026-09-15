@@ -408,6 +408,27 @@ extend region RR_KF_RUPEE_ALCOVE {
     }
 }
 
+# overworld/lost_woods
+
+extend region RR_THE_LOST_WOODS {
+    locations {
+        RC_LW_SHORTCUT_RUPEE_1: is_child() and (has(RG_SILVER_SCALE) or can_use(RG_IRON_BOOTS) or can_use(RG_BOOMERANG))
+        RC_LW_SHORTCUT_RUPEE_2: is_child() and (has(RG_SILVER_SCALE) or can_use(RG_IRON_BOOTS) or can_use(RG_BOOMERANG))
+        RC_LW_SHORTCUT_RUPEE_3: is_child() and (has(RG_SILVER_SCALE) or can_use(RG_IRON_BOOTS) or can_use(RG_BOOMERANG))
+        RC_LW_SHORTCUT_RUPEE_4: is_child() and (has(RG_SILVER_SCALE) or can_use(RG_IRON_BOOTS) or can_use(RG_BOOMERANG))
+        RC_LW_SHORTCUT_RUPEE_5: is_child() and (has(RG_SILVER_SCALE) or can_use(RG_IRON_BOOTS) or can_use(RG_BOOMERANG))
+        RC_LW_SHORTCUT_RUPEE_6: is_child() and (has(RG_SILVER_SCALE) or can_use(RG_IRON_BOOTS) or can_use(RG_BOOMERANG))
+        RC_LW_SHORTCUT_RUPEE_7: is_child() and (has(RG_SILVER_SCALE) or can_use(RG_IRON_BOOTS) or can_use(RG_BOOMERANG))
+        RC_LW_SHORTCUT_RUPEE_8: is_child() and (has(RG_SILVER_SCALE) or can_use(RG_IRON_BOOTS) or can_use(RG_BOOMERANG))
+    }
+}
+
+extend region RR_LW_BEYOND_MIDO {
+    locations {
+        RC_LW_BOULDER_RUPEE: blast_or_smash()
+    }
+}
+
 # overworld/zoras_fountain
 
 extend region RR_ZF_LAKEBED {

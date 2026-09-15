@@ -50,6 +50,14 @@ extend region RR_KF_STORMS_GROTTO {
     }
 }
 
+# overworld/lost_woods
+
+extend region RR_LW_NEAR_SHORTCUTS_GROTTO {
+    locations {
+        RC_LW_NEAR_SHORTCUTS_GROTTO_FISH: has_bottle()
+    }
+}
+
 # overworld/zoras_domain
 
 extend region RR_ZORAS_DOMAIN {

@@ -21,6 +21,14 @@ extend region RR_KAK_ODD_POTION_BUILDING {
     }
 }
 
+# overworld/lost_woods
+extend region RR_THE_LOST_WOODS {
+    locations {
+        RC_LW_TRADE_COJIRO: is_adult() and can_use(RG_COJIRO)
+        RC_LW_TRADE_ODD_POTION: is_adult() and can_use(RG_ODD_POTION)
+    }
+}
+
 # overworld/zoras_domain
 
 extend region RR_ZORAS_DOMAIN {

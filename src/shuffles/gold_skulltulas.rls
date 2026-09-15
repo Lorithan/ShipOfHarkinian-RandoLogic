@@ -544,6 +544,23 @@ extend region RR_KOKIRI_FOREST {
     }
 }
 
+# overworld/lost_woods
+
+extend region RR_THE_LOST_WOODS {
+    locations {
+        RC_LW_GS_BEAN_PATCH_NEAR_BRIDGE: can_spawn_soil_skull(RG_LOST_WOODS_BRIDGE_BEAN_SOUL) and can_attack()
+    }
+}
+
+extend region RR_LW_BEYOND_MIDO {
+    locations {
+        RC_LW_GS_ABOVE_THEATER: is_adult() and ((can_plant_bean(RR_LW_BEYOND_MIDO, RG_LOST_WOODS_BEAN_SOUL) and can_get_drop(RE_GOLD_SKULLTULA))
+            || trick(RT_LW_GS_BEAN) and can_use(RG_HOOKSHOT) and (can_use(RG_LONGSHOT) or can_use(RG_FAIRY_BOW) oor can_use(RG_FAIRY_SLINGSHOT)
+            || can_use(RG_BOMBCHU_5) or can_use(RG_DINS_FIRE))) and can_get_night_time_gs()
+        RC_LW_GS_BEAN_PATCH_NEAR_THEATER: can_spawn_soil_skull(RG_LOST_WOODS_BEAN_SOUL) and (can_get_drop(RE_GOLD_SKULLTULA) or (setting(RSK_SHUFFLE_SCRUBS) is RO_SCRUBS_OFF and can_reflect_nuts()))
+    }
+}
+
 # overworld/market
 
 extend region RR_MARKET_GUARD_HOUSE {

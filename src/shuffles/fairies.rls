@@ -354,6 +354,45 @@ extend region RR_KF_STORMS_GROTTO {
     }
 }
 
+# overworld/lost_woods
+
+extend region RR_THE_LOST_WOODS {
+    locations {
+        RC_LW_BEAN_SPROUT_NEAR_BRIDGE_FAIRY_1: is_child() and can_use(RG_MAGIC_BEAN) and has(RG_LOST_WOODS_BRIDGE_BEAN_SOUL) and can_use(RG_SONG_OF_STORMS)
+        RC_LW_BEAN_SPROUT_NEAR_BRIDGE_FAIRY_2: is_child() and can_use(RG_MAGIC_BEAN) and has(RG_LOST_WOODS_BRIDGE_BEAN_SOUL) and can_use(RG_SONG_OF_STORMS)
+        RC_LW_BEAN_SPROUT_NEAR_BRIDGE_FAIRY_3: is_child() and can_use(RG_MAGIC_BEAN) and has(RG_LOST_WOODS_BRIDGE_BEAN_SOUL) and can_use(RG_SONG_OF_STORMS)
+        RC_LW_SHORTCUT_STORMS_FAIRY: can_use(RG_SONG_OF_STORMS)
+    }
+}
+
+extend region RR_LW_UNDER_BRIDGE {
+    locations {
+        RC_LW_GOSSIP_STONE_FAIRY: call_gossip_fairy_except_suns()
+        RC_LW_GOSSIP_STONE_FAIRY_BIG: can_use(RG_SONG_OF_STORMS)
+    }
+}
+
+extend region RR_LW_BEYOND_MIDO {
+    locations {
+        RC_LW_BEAN_SPROUT_NEAR_THEATER_FAIRY_1: is_child() and has(RG_MAGIC_BEAN) and has(RG_LOST_WOODS_BEAN_SOUL) and can_use(RG_SONG_OF_STORMS)
+        RC_LW_BEAN_SPROUT_NEAR_THEATER_FAIRY_2: is_child() and has(RG_MAGIC_BEAN) and has(RG_LOST_WOODS_BEAN_SOUL) and can_use(RG_SONG_OF_STORMS)
+        RC_LW_BEAN_SPROUT_NEAR_THEATER_FAIRY_3: is_child() and has(RG_MAGIC_BEAN) and has(RG_LOST_WOODS_BEAN_SOUL) and can_use(RG_SONG_OF_STORMS)
+    }
+}
+
+extend region RR_LW_NEAR_SHORTCUTS_GROTTO {
+    locations {
+        RC_LW_NEAR_SHORTCUTS_GROTTO_GOSSIP_STONE_FAIRY: call_gossip_fairy()
+        RC_LW_NEAR_SHORTCUTS_GROTTO_GOSSIP_STONE_FAIRY_BIG: can_use(RG_SONG_OF_STORMS)
+    }
+}
+
+extend region RR_LW_SCRUBS_GROTTO {
+    locations {
+        RC_LW_DEKU_SCRUB_GROTTO_SUN_FAIRY: can_use(RG_SUNS_SONG)
+    }
+}
+
 # overworld/temple_of_time
 
 extend region RR_TOT_ENTRANCE {

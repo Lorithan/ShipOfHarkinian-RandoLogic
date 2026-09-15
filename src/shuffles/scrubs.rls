@@ -118,6 +118,29 @@ extend region RR_HF_INSIDE_FENCE_GROTTO {
     }
 }
 
+# overworld/lost_woods
+
+extend region RR_LW_UNDER_BRIDGE {
+    locations {
+        RC_LW_DEKU_SCRUB_NEAR_BRIDGE: is_child() and can_stun_deku() and has(RG_SPEAK_DEKU) and check_price() <= wallet_capacity()
+    }
+}
+
+extend region RR_LW_BEYOND_MIDO {
+    locations {
+        RC_LW_DEKU_SCRUB_NEAR_DEKU_THEATER_RIGHT: is_child and can_stun_deku() and has(RG_SPEAK_DEKU) and check_price() <= wallet_capacity()
+        RC_LW_DEKU_SCRUB_NEAR_DEKU_THEATER_LEFT: is_child and can_stun_deku() and has(RG_SPEAK_DEKU) and check_price() <= wallet_capacity()
+    }
+
+}
+
+extend region RR_LW_SCRUBS_GROTTO {
+    locations {
+        RC_LW_DEKU_SCRUB_GROTTO_REAR: can_stun_deku() and has(RG_SPEAK_DEKU) and check_price() <= wallet_capacity()
+        RC_LW_DEKU_SCRUB_GROTTO_FRONT: can_stun_deku() and has(RG_SPEAK_DEKU) and check_price() <= wallet_capacity()
+    }
+}
+
 # overworld/zoras_river
 
 extend region RR_ZR_STORMS_GROTTO {
