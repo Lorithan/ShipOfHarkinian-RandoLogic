@@ -407,6 +407,13 @@ extend region RR_KF_RUPEE_ALCOVE {
         RC_KF_BEAN_RED_RUPEE: is_adult() and can_use(RG_HOVER_BOOTS)
     }
 }
+# overworld/lon_lon_ranch
+
+extend region RR_LLR_TOWER {
+    locations {
+        RC_LLR_FREESTANDING_POH: is_child() and has(RG_POWER_BRACELET) and has(RG_CRAWL)
+    }
+}
 
 # overworld/lost_woods
 

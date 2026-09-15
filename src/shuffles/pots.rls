@@ -756,6 +756,28 @@ extend region RR_KF_KNOW_IT_ALL_HOUSE {
     }
 }
 
+# overworld/lon_lon_ranch
+
+extend region RR_LON_LON_RANCH {
+    locations {
+        RC_LLR_FRONT_POT_1:     is_child() and can_break_pots()
+        RC_LLR_FRONT_POT_2:     is_child() and can_break_pots()
+        RC_LLR_FRONT_POT_3:     is_child() and can_break_pots()
+        RC_LLR_FRONT_POT_4:     is_child() and can_break_pots()
+        RC_LLR_RAIN_SHED_POT_1: is_child() and can_break_pots()
+        RC_LLR_RAIN_SHED_POT_2: is_child() and can_break_pots()
+        RC_LLR_RAIN_SHED_POT_3: is_child() and can_break_pots()
+    }
+}
+
+extend region RR_LLR_TALONS_HOUSE {
+    locations {
+        RC_LLR_TALONS_HOUSE_POT_1: has(RG_POWER_BRACELET) or can_use_sword() # TODO: can_break_pots() restricted
+        RC_LLR_TALONS_HOUSE_POT_2: has(RG_POWER_BRACELET) or can_use_sword() # TODO: can_break_pots() restricted
+        RC_LLR_TALONS_HOUSE_POT_3: has(RG_POWER_BRACELET) or can_use_sword() # TODO: can_break_pots() restricted
+    }
+}
+
 # overworld/market
 
 extend region RR_MARKET_GUARD_HOUSE {

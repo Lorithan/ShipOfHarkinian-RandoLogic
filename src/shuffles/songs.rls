@@ -1,0 +1,7 @@
+# overworld/lon_lon_ranch.rls
+
+extend region RR_LON_LON_RANCH {
+    locations {
+        RC_SONG_FROM_MALON: is_child() and has(RG_ZELDAS_LETTER) and has(RG_SPEAK_HYLIAN) and has(RG_FAIRY_OCARINA) and at_day()
+    }
+}

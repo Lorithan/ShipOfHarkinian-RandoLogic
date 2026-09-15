@@ -544,6 +544,17 @@ extend region RR_KOKIRI_FOREST {
     }
 }
 
+# overworld/lon_lon_ranch
+
+extend region RR_LON_LON_RANCH {
+    locations {
+        RC_LLR_GS_TREE:         is_child() and can_bonk_trees() and (has(RG_POWER_BRACELET) or can_kill(RE_GOLD_SKULLTULA))
+        RC_LLR_GS_RAIN_SHED:    is_child() and can_get_night_time_gs() and (has(RG_POWER_BRACELET) or can_kill(RE_GOLD_SKULLTULA))
+        RC_LLR_GS_HOUSE_WINDOW: is_child() and hookshot_or_boomerang() and can_get_night_time_gs()
+        RC_LLR_GS_BACK_WALL:    is_child() and hookshot_or_boomerang() and can_get_night_time_gs()
+    }
+}
+
 # overworld/lost_woods
 
 extend region RR_THE_LOST_WOODS {

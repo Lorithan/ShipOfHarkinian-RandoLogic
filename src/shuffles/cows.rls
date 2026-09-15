@@ -43,3 +43,19 @@ extend region RR_KF_LINKS_HOUSE {
         RC_KF_LINKS_HOUSE_COW: is_adult() and can_use(RG_EPONAS_SONG) and flag(LOGIC_LINKS_COW)
     }
 }
+
+# overworld/lon_lon_ranch
+
+extend region RR_LLR_STABLES {
+    locations {
+        RC_LLR_STABLES_LEFT_COW:  can_use(RG_EPONAS_SONG)
+        RC_LLR_STABLES_RIGHT_COW: can_use(RG_EPONAS_SONG)
+    }
+}
+
+extend region RR_LLR_TOWER {
+    locations {
+        RC_LLR_TOWER_LEFT_COW:  can_use(RG_EPONAS_SONG)
+        RC_LLR_TOWER_RIGHT_COW: can_use(RG_EPONAS_SONG)
+    }
+}

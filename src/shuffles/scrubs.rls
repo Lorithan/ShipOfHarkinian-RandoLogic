@@ -118,6 +118,16 @@ extend region RR_HF_INSIDE_FENCE_GROTTO {
     }
 }
 
+# overworld/lon_lon_ranch
+
+extend region RR_LLR_GROTTO {
+    locations {
+        RC_LLR_DEKU_SCRUB_GROTTO_LEFT:   can_stun_deku() and has(RG_SPEAK_DEKU) and check_price() <= wallet_capacity()
+        RC_LLR_DEKU_SCRUB_GROTTO_RIGHT:  can_stun_deku() and has(RG_SPEAK_DEKU) and check_price() <= wallet_capacity()
+        RC_LLR_DEKU_SCRUB_GROTTO_CENTER: can_stun_deku() and has(RG_SPEAK_DEKU) and check_price() <= wallet_capacity()
+    }
+}
+
 # overworld/lost_woods
 
 extend region RR_LW_UNDER_BRIDGE {

@@ -3,3 +3,61 @@ extend region RR_ROOT {
         LOGIC_FREED_EPONA: setting(RSK_SKIP_EPONA_RACE)
 	}
 }
+
+region RR_LON_LON_RANCH {
+    name: "Lon Lon Ranch"
+    scene: SCENE_LON_LON_RANCH
+
+    events {
+        LOGIC_FREED_EPONA: has(RG_CHILD_WALLET) and has(RG_SPEAK_HYLIAN) and can_use(RG_EPONAS_SONG) and is_adult() and at_day()
+        LOGIC_LINKS_COW:   has(RG_CHILD_WALLET) and has(RG_SPEAK_HYLIAN) and can_use(RG_EPONAS_SONG) and is_adult() and at_day()
+    }
+
+    exits {
+        RR_HYRULE_FIELD:     always
+        RR_LLR_TALONS_HOUSE: can_open_overworld_door(RG_TALONS_HOUSE_KEY)
+        RR_LLR_STABLES:      can_open_overworld_door(RG_STABLES_KEY)
+        RR_LLR_TOWER:        can_open_overworld_door(RG_BACK_TOWER_KEY)
+        RR_LLR_GROTTO:       is_child()
+    }
+}
+
+region RR_LLR_TALONS_HOUSE {
+    name: "LLR Talons House"
+    scene: SCENE_LON_LON_BUILDINGS
+
+    locations {
+        RC_LLR_TALONS_CHICKENS: has(RG_CHILD_WALLET) and has(RG_SPEAK_HYLIAN) and is_child() and at_day() and has(RG_ZELDAS_LETTER) and has(RG_POWER_BRACELET)
+    }
+
+    exits {
+        RR_LON_LON_RANCH: always
+    }
+}
+
+region RR_LLR_STABLES {
+    name: "LLR Stables"
+    scene: SCENE_STABLE
+
+    exits {
+        RR_LON_LON_RANCH: always
+    }
+}
+
+region RR_LLR_TOWER {
+    name: "LLR Tower"
+    scene: SCENE_LON_LON_BUILDINGS
+
+    exits {
+        RR_LON_LON_RANCH: always
+    }
+}
+
+region RR_LLR_GROTTO {
+    name: "LLR Grotto"
+    scene: SCENE_GROTTOS
+
+    exits {
+        RR_LON_LON_RANCH: always
+    }
+}

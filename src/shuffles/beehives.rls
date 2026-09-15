@@ -91,6 +91,15 @@ extend region RR_KF_STORMS_GROTTO {
     }
 }
 
+
+# overworld/lon_lon_ranch
+
+extend region RR_LLR_GROTTO {
+    locations {
+        RC_LLR_GROTTO_BEEHIVE: can_break_upper_beehives()
+    }
+}
+
 # overworld/lost_woods
 
 extend region RR_LW_NEAR_SHORTCUTS_GROTTO {

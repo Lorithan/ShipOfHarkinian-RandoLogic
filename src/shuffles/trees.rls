@@ -88,6 +88,14 @@ extend region RR_KAKARIKO_VILLAGE {
     }
 }
 
+# overworld/lon_lon_ranch
+
+extend region RR_LON_LON_RANCH {
+    locations {
+        RC_LLR_TREE: is_child() and can_bonk_trees()
+    }
+}
+
 # overworld/market
 
 extend region RR_THE_MARKET {

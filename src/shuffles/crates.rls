@@ -175,6 +175,14 @@ extend region RR_KAKARIKO_VILLAGE {
     }
 }
 
+# overworld/lon_lon_ranch
+
+extend region RR_LON_LON_RANCH {
+    locations {
+        RC_LLR_NEAR_TREE_CRATE: is_child() and can_break_crates()
+    }
+}
+
 # overworld/market
 
 extend region RR_THE_MARKET {
