@@ -367,7 +367,7 @@ extend region RR_THE_LOST_WOODS {
 
 extend region RR_LW_UNDER_BRIDGE {
     locations {
-        RC_LW_GOSSIP_STONE_FAIRY: call_gossip_fairy_except_suns()
+        RC_LW_GOSSIP_STONE_FAIRY:     call_gossip_fairy_except_suns()
         RC_LW_GOSSIP_STONE_FAIRY_BIG: can_use(RG_SONG_OF_STORMS)
     }
 }
@@ -382,7 +382,7 @@ extend region RR_LW_BEYOND_MIDO {
 
 extend region RR_LW_NEAR_SHORTCUTS_GROTTO {
     locations {
-        RC_LW_NEAR_SHORTCUTS_GROTTO_GOSSIP_STONE_FAIRY: call_gossip_fairy()
+        RC_LW_NEAR_SHORTCUTS_GROTTO_GOSSIP_STONE_FAIRY:     call_gossip_fairy()
         RC_LW_NEAR_SHORTCUTS_GROTTO_GOSSIP_STONE_FAIRY_BIG: can_use(RG_SONG_OF_STORMS)
     }
 }

@@ -103,7 +103,7 @@ extend region RR_LLR_GROTTO {
 
 extend region RR_LW_NEAR_SHORTCUTS_GROTTO {
     locations {
-        RC_LW_NEAR_SHORTCUTS_GROTTO_BEEHIVE_LEFT: can_break_lower_beehives()
+        RC_LW_NEAR_SHORTCUTS_GROTTO_BEEHIVE_LEFT:  can_break_lower_beehives()
         RC_LW_NEAR_SHORTCUTS_GROTTO_BEEHIVE_RIGHT: can_break_lower_beehives()
     }
 }
