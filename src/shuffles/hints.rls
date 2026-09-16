@@ -182,7 +182,7 @@ extend region RR_LW_UNDER_BRIDGE {
 
 extend region RR_LW_NEAR_SHORTCUTS_GROTTO {
     locations {
-        RR_LW_NEAR_SHORTCUTS_GROTTO: always
+        RC_LW_NEAR_SHORTCUTS_GROTTO_GOSSIP_STONE: always
     }
 }
 

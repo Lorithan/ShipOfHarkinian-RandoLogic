@@ -53,7 +53,7 @@ region RR_LW_BEYOND_MIDO {
     scene: SCENE_LOST_WOODS
 
     events {
-        LOOGIC_FAIRY_ACCESS: can_use(RG_STICKS) or (is_child() and can_use(RG_MAGIC_BEAN) and has(RG_LOST_WOODS_BEAN_SOUL) and can_use(RG_SONG_OF_STORMS))
+        LOGIC_FAIRY_ACCESS: can_use(RG_STICKS) or (is_child() and can_use(RG_MAGIC_BEAN) and has(RG_LOST_WOODS_BEAN_SOUL) and can_use(RG_SONG_OF_STORMS))
     }
 
     exits {
@@ -68,8 +68,15 @@ region RR_LW_BEYOND_MIDO {
 region RR_LW_NEAR_SHORTCUTS_GROTTO {
     name: "LW Near Shortcuts Grotto"
     scene: SCENE_GROTTOS
+    
+    events {
+        LOGIC_FAIRY_ACCESS: call_gossip_fairy() or can_use(RG_STICKS)
+        LOGIC_BUG_ACCESS: can_cut_shrubs()
+        LOGIC_FISH_ACCESS: always
+    }
+
     exits {
-        RR_LW_BEYOND_MIDO: always
+        RR_THE_LOST_WOODS: always
     }
 }
 
