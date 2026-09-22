@@ -966,6 +966,14 @@ extend region RR_LW_NEAR_SHORTCUTS_GROTTO {
     }
 }
 
+# overworld/sacred_forest_meadow
+
+extend region RR_SFM_WOLFOS_GROTTO {
+    locations {
+        RC_SFM_WOLFOS_GROTTO_CHEST: can_kill(RE_WOLFOS, ED_CLOSE, true, 2) and has(RG_OPEN_CHEST)
+    }
+}
+
 # overworld/zoras_domain
 
 extend region RR_ZORAS_DOMAIN {

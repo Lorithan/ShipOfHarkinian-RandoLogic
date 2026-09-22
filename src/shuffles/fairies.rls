@@ -398,6 +398,37 @@ extend region RR_LW_SCRUBS_GROTTO {
     }
 }
 
+# overworld/sacred_forest_meadow
+
+extend region RR_SFM_ABOVE_MAZE {
+    locations {
+        RC_SFM_MAZE_LOWER_GOSSIP_STONE_FAIRY:     call_gossip_fairy_except_suns()
+        RC_SFM_MAZE_LOWER_GOSSIP_STONE_FAIRY_BIG: can_use(RG_SONG_OF_STORMS)
+        RC_SFM_MAZE_UPPER_GOSSIP_STONE_FAIRY:     call_gossip_fairy_except_suns()
+        RC_SFM_MAZE_UPPER_GOSSIP_STONE_FAIRY_BIG: can_use(RG_SONG_OF_STORMS)
+    }
+}
+
+extend region RR_SACRED_FOREST_MEADOW {
+    locations {
+        RC_SFM_SARIA_GOSSIP_STONE_FAIRY:     call_gossip_fairy_except_suns()
+        RC_SFM_SARIA_GOSSIP_STONE_FAIRY_BIG: can_use(RG_SONG_OF_STORMS)
+    }
+}
+
+extend region RR_SFM_FAIRY_GROTTO {
+    locations {    
+        RC_SFM_FAIRY_GROTTO_FAIRY_1: always
+        RC_SFM_FAIRY_GROTTO_FAIRY_2: always
+        RC_SFM_FAIRY_GROTTO_FAIRY_3: always
+        RC_SFM_FAIRY_GROTTO_FAIRY_4: always
+        RC_SFM_FAIRY_GROTTO_FAIRY_5: always
+        RC_SFM_FAIRY_GROTTO_FAIRY_6: always
+        RC_SFM_FAIRY_GROTTO_FAIRY_7: always
+        RC_SFM_FAIRY_GROTTO_FAIRY_8: always
+    }
+}
+
 # overworld/temple_of_time
 
 extend region RR_TOT_ENTRANCE {

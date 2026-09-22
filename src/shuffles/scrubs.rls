@@ -151,6 +151,15 @@ extend region RR_LW_SCRUBS_GROTTO {
     }
 }
 
+# overworld/sacred_forest_meadow
+
+extend region RR_SFM_STORMS_GROTTO {
+    locations {
+        RC_SFM_DEKU_SCRUB_GROTTO_REAR:  can_stun_deku() and has(RG_SPEAK_DEKU) and check_price() <= wallet_capacity()
+        RC_SFM_DEKU_SCRUB_GROTTO_FRONT: can_stun_deku() and has(RG_SPEAK_DEKU) and check_price() <= wallet_capacity()
+    }
+}
+
 # overworld/zoras_river
 
 extend region RR_ZR_STORMS_GROTTO {

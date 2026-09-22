@@ -575,6 +575,14 @@ extend region RR_MARKET_GUARD_HOUSE {
     }
 }
 
+# overworld/sacred_forest_meadoow
+
+extend region RR_SFM_ABOVE_MAZE {
+    locations {
+        RC_SFM_GS: is_adult() and hookshot_or_boomerang() and can_get_night_time_gs()
+    }
+}
+
 # overworld/zoras_domain
 
 extend region RR_ZORAS_DOMAIN {
