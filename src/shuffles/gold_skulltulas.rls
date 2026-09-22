@@ -575,7 +575,7 @@ extend region RR_MARKET_GUARD_HOUSE {
     }
 }
 
-# overworld/sacred_forest_meadoow
+# overworld/sacred_forest_meadow
 
 extend region RR_SFM_ABOVE_MAZE {
     locations {
