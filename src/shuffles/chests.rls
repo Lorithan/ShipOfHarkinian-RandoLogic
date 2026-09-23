@@ -864,6 +864,14 @@ extend region RR_DMT_STORMS_GROTTO {
     }
 }
 
+# overworld/gerduo_fortress
+
+extend region RR_GF_NEAR_CHEST {
+    locations {
+        RC_GF_CHEST: has(RG_OPEN_CHEST)
+    }   
+}
+
 # overworld/goron_city
 
 extend region RR_GORON_CITY {
