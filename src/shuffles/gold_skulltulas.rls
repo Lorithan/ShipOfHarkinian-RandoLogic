@@ -469,24 +469,6 @@ extend region RR_DESERT_COLOSSUS {
     }
 }
 
-# overworld/goron_city
-
-extend region RR_GORON_CITY {
-    locations {
-        RC_GC_GS_BOULDER_MAZE:    is_child() and blast_or_smash()
-        RC_GC_GS_CENTER_PLATFORM: is_adult() and can_attack()
-    }
-}
-
-# overworld/graveyard
-
-extend region RR_THE_GRAVEYARD {
-    locations {
-        RC_GRAVEYARD_GS_WALL:       is_child() and hookshot_or_boomerang() and at_night() and can_get_night_time_gs()
-        RC_GRAVEYARD_GS_BEAN_PATCH: can_spawn_soil_skull(RG_GRAVEYARD_BEAN_SOUL) and can_attack()
-    }
-}
-
 # overworld/gerudo_fortress
 
 extend region RR_GF_NEAR_GS {
@@ -517,6 +499,24 @@ extend region RR_GF_BELOW_GS {
 extend region RR_GF_HBA_RANGE {
     locations {
         RC_GF_HBA_RANGE_GS: is_adult() and can_get_drop(RE_GOLD_SKULLTULA, ED_BOOMERANG) and can_get_night_time_gs()
+    }
+}
+
+# overworld/goron_city
+
+extend region RR_GORON_CITY {
+    locations {
+        RC_GC_GS_BOULDER_MAZE:    is_child() and blast_or_smash()
+        RC_GC_GS_CENTER_PLATFORM: is_adult() and can_attack()
+    }
+}
+
+# overworld/graveyard
+
+extend region RR_THE_GRAVEYARD {
+    locations {
+        RC_GRAVEYARD_GS_WALL:       is_child() and hookshot_or_boomerang() and at_night() and can_get_night_time_gs()
+        RC_GRAVEYARD_GS_BEAN_PATCH: can_spawn_soil_skull(RG_GRAVEYARD_BEAN_SOUL) and can_attack()
     }
 }
 

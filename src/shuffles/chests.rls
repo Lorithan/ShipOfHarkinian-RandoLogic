@@ -864,7 +864,7 @@ extend region RR_DMT_STORMS_GROTTO {
     }
 }
 
-# overworld/gerduo_fortress
+# overworld/gerudo_fortress
 
 extend region RR_GF_NEAR_CHEST {
     locations {
