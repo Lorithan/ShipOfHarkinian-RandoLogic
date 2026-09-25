@@ -917,6 +917,14 @@ extend region RR_GRAVEYARD_DAMPES_GRAVE {
     }
 }
 
+# overworld/haunted_wasteland
+
+extend region RR_HAUNTED_WASTELAND {
+    locations {
+        RC_WASTELAND_CHEST: has_fire_source() and has(RG_OPEN_CHEST)
+    }
+}
+
 # overworld/hyrule_field
 
 extend region RR_HF_SOUTHEAST_GROTTO {

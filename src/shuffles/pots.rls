@@ -713,6 +713,17 @@ extend region RR_GRAVEYARD_DAMPES_GRAVE {
     }
 }
 
+# overworld/haunted_wasteland
+
+extend region RR_HAUNTED_WASTELAND {
+    locations {
+        RC_WASTELAND_NEAR_GS_POT_1: can_break_pots()
+        RC_WASTELAND_NEAR_GS_POT_2: can_break_pots()
+        RC_WASTELAND_NEAR_GS_POT_3: can_break_pots()
+        RC_WASTELAND_NEAR_GS_POT_4: can_break_pots()
+    }   
+}
+
 # overworld/hyrule_field
 
 extend region RR_HF_COW_GROTTO_BEHIND_WEBS {

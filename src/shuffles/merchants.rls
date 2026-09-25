@@ -6,6 +6,14 @@ extend region RR_GC_MEDIGORON {
     }
 }
 
+# overworld/haunted_wasteland
+
+extend region RR_HAUNTED_WASTELAND {
+    locations {
+        RC_WASTELAND_BOMBCHU_SALESMAN: (can_jumpslash() or can_use(RG_HOVER_BOOTS)) and has(RG_SPEAK_HYLIAN) and check_price() <= wallet_capacity()
+    }
+}
+
 # overworld/kakariko
 
 extend region RR_KAK_ODD_POTION_BUILDING {

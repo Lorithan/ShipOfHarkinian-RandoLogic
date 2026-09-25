@@ -224,6 +224,28 @@ extend region RR_THE_GRAVEYARD {
     }
 }
 
+# overworld/haunted_wasteland
+
+extend region RR_WASTELAND_NEAR_FORTRESS {
+    locations {
+        RC_HW_BEFORE_QUICKSAND_CRATE: can_break_crates()
+    }
+}
+
+extend region RR_HAUNTED_WASTELAND {
+    locations {
+        RC_HW_AFTER_QUICKSAND_CRATE_1: can_break_crates()
+        RC_HW_AFTER_QUICKSAND_CRATE_2: can_break_crates()
+        RC_HW_AFTER_QUICKSAND_CRATE_3: can_break_crates()
+    }
+}
+
+extend region RR_WASTELAND_NEAR_COLOSSUS {
+    locations {
+        RC_HW_NEAR_COLOSSUS_CRATE: can_break_crates()
+    }
+}
+
 # overworld/kakariko
 
 extend region RR_KAKARIKO_VILLAGE {

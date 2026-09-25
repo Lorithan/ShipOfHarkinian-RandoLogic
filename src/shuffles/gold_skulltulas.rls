@@ -541,6 +541,14 @@ extend region RR_THE_GRAVEYARD {
     }
 }
 
+# overworld/haunted_wasteland
+
+extend region RR_HAUNTED_WASTELAND {
+    locations {
+        RC_WASTELAND_GS: can_get_drop(RE_GOLD_SKULLTULA, ED_BOOMERANG) or (is_adult() and can_ground_jumpslash())
+    }
+}
+
 # overworld/hyrule_field
 
 extend region RR_HF_COW_GROTTO_BEHIND_WEBS {
