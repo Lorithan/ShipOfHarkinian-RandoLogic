@@ -210,7 +210,7 @@ extend region RR_DESERT_COLOSSUS_OASIS {
     }
 }
 
-# overworld/gerduo_fortress
+# overworld/gerudo_fortress
 
 extend region RR_GF_STORMS_GROTTO {
     locations {
